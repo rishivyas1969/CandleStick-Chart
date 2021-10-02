@@ -14,7 +14,7 @@ def home():
     start = datetime.datetime.today() - datetime.timedelta(int(365/2))
     end = datetime.datetime.today()
 
-    df = data.DataReader(name='APPL', data_source='yahoo', start=start, end=end)
+    df = data.DataReader(name='TSLA', data_source='yahoo', start=start, end=end)
 
     def inc_dec(o, c):
         if c>o:
