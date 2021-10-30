@@ -1,13 +1,16 @@
-{% extends "layout.html"%}
-{% block content%}
+{% extends "layout.html"%} {% block content%}
 
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bokeh/2.1.1/bokeh.min.js" />
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="https://cdnjs.cloudflare.com/ajax/libs/bokeh/2.1.1/bokeh.min.js"
+/>
 <script src="{{ cdn_js | safe }}"></script>
 
 <div class="home">
-    <h2>How TSLA doin.?</h2>
-    {{ script | safe}}
-    {{ div | safe}}
+  <h2>How TSLA doin.?</h2>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, ut.</p>
+  {{ script | safe}} {{ div | safe}}
 </div>
 
 {% endblock%}
